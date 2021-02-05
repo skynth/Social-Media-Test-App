@@ -32,13 +32,17 @@ public class DashBoardActivity extends AppCompatActivity {
         item.add(new StaticRvModel(R.drawable.soccercolor, "soccer"));
         item.add(new StaticRvModel(R.drawable.basketball, "basketball"));
         item.add(new StaticRvModel(R.drawable.volleyball, "volleyball"));
-        item.add(new StaticRvModel(R.drawable.tennisball, "v"));
+        item.add(new StaticRvModel(R.drawable.tennisball, "tennisball"));
         item.add(new StaticRvModel(R.drawable.baseball, "baseball"));
 
         recyclerView = findViewById(R.id.view1);
         staticRvAdapter = new StaticRvAdapter(item);
         recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
         recyclerView.setAdapter(staticRvAdapter);
+
+
+
+
 
         items.add(new DynamicRVModel("Soccer"));
         items.add(new DynamicRVModel("Basketball"));

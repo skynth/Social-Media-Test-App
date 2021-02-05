@@ -1,5 +1,6 @@
 package com.example.socialmediaapp;
 
+//Makeup of the individual element in the recyclerview
 public class StaticRvModel {
     private int image;
     private String text;
